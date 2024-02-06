@@ -3,6 +3,7 @@ function fibonacci() {
   let prevNumbers = [0, 1];
 
   while (true) {
+    // Avoid exceeding the limit (100)
     if (
       prevNumbers[prevNumbers.length - 1] +
         prevNumbers[prevNumbers.length - 2] <=
