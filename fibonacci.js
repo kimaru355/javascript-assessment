@@ -1,4 +1,5 @@
-function fibonacci(limit) {
+function fibonacci() {
+  let limit = 100;
   let prevNumbers = [0, 1];
 
   while (true) {
@@ -21,4 +22,4 @@ function fibonacci(limit) {
   });
 }
 
-fibonacci(100);
+fibonacci();
