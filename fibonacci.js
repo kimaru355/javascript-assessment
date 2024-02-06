@@ -1,19 +1,18 @@
 function fibonacci(limit) {
-  let number;
-  let prevNumbers = [];
+  let prevNumbers = [0, 1];
 
-  for (number = 0; number <= limit; number++) {
-    if (prevNumbers.length < 2) {
-      prevNumbers.push(number);
-      continue;
-    }
+  while (true) {
     if (
       prevNumbers[prevNumbers.length - 1] +
-        prevNumbers[prevNumbers.length - 2] ===
-      number
+        prevNumbers[prevNumbers.length - 2] <=
+      limit
     ) {
-      console(prevNumbers);
-      prevNumbers.push(number);
+      prevNumbers.push(
+        prevNumbers[prevNumbers.length - 1] +
+          prevNumbers[prevNumbers.length - 2]
+      );
+    } else {
+      break;
     }
   }
 
