@@ -1,3 +1,7 @@
+// Question 4: Capitalize Words
+// Write a program that accepts a string as input, capitalizes the first letter of each word in the
+// string, and then returns the result string.
+
 function capitalize() {
   let arguments = process.argv.slice(2);
   let result = "";
@@ -11,7 +15,7 @@ function capitalize() {
     let letter = word.charCodeAt(0);
     if (letter >= 97 && letter <= 122) {
       letter = String.fromCharCode(letter - 32);
-    } else if (letter >= 65 && letter <= 90) {
+    } else {
       letter = String.fromCharCode(letter);
     }
     word = word.split("");

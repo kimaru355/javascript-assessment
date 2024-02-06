@@ -1,3 +1,6 @@
+// Question 2: Fibonacci Sequence
+// Write a program to generate the Fibonacci sequence up to 100.
+
 function fibonacci() {
   let limit = 100;
   let prevNumbers = [0, 1];

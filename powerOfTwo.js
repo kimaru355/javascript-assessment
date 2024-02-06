@@ -1,3 +1,6 @@
+// Question 3: Power of Two
+// Write a program that takes an integer as input and returns true if the input is a power of two
+
 function powerOfTwo() {
   const checkPowerOfTwo = (integer) => {
     if (typeof integer !== "number" || (integer % 2 !== 0 && integer !== 1)) {
