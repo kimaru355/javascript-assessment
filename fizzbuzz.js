@@ -1,15 +1,15 @@
-function fizzbuzz () {
-    let i;
+function fizzbuzz (limit) {
+    let number;
 
-    for (i = 1; i < 100; i++) {
-        if (i % 15 === 0) {
+    for (number = 1; number <= limit; number++) {
+        if (number % 15 === 0) {
             console.log("FizzBuzz");
-        } else if (i % 3 === 0) {
+        } else if (number % 3 === 0) {
             console.log("Fizz");
-        } else if (i % 5 === 0) {
+        } else if (number % 5 === 0) {
             console.log("Buzz");
         }
     }
 }
 
-fizzbuzz();
+fizzbuzz(100);
