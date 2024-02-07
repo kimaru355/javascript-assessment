@@ -1,8 +1,5 @@
-// Question 5: Reverse Integer
-// Write a program that takes an integer as input and returns an integer with reversed digit ordering.
-
 function reverse() {
-  let numbers = process.argv.slice(2);
+  let args = process.argv.slice(2);
 
   const reverseNumber = (integer) => {
     // remove extra 0s
@@ -18,11 +15,12 @@ function reverse() {
       integer[integer.length - 1 - index] = temp;
       index++;
     }
+
     integer = integer.join("");
     return +integer;
   };
 
-  numbers.forEach((integer) => {
+  args.forEach((integer) => {
     if (+integer < 0) {
       console.log(reverseNumber(+integer * -1) * -1);
     } else {

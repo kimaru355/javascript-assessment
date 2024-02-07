@@ -5,7 +5,6 @@ function countVowels() {
   let arguments = process.argv.splice(2);
 
   const countTheVowels = (sentence) => {
-    console.log(typeof sentence);
     sentence = sentence.split("");
     vowels = "aeiouAEIOU";
     count = 0;
